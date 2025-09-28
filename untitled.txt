@@ -1,0 +1,709 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "88K$HITZ MAIN CHEAT ",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "ROI LOADER...",
+   LoadingSubtitle = "88K$HITZ MAIN CHEAT",
+   ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Dark", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "2K"
+   },
+
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "discord.gg/369SHITZ", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "LUHOD SA GODZ!!",
+      Subtitle = "1KMI$TRAL ON TOP BABY",
+      Note = "1KMI$TRAL ON TOP BABYY", -- Use this to tell the user how to get a key
+      FileName = "2KDEMONZ", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "1KMI$TRAL-MAINCHEAT" -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MAINTab = Window:CreateTab("ROLEPLAY SCRIPTS", 4483362458) -- Title, Image
+local MAINSection = MAINTab:CreateSection("MAIN CHEAT")
+
+
+Rayfield:Notify({
+   Title = "88K",
+   Content = "88k MAIN CHEAT",
+   Duration = 10,
+   Image = 4483362458,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "INFINITE YIELD [88K]",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "MUSIC EXPO [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
+   end,
+})
+
+
+
+local Button = MAINTab:CreateButton({
+   Name = "BIG HEAD [88K]",
+   Callback = function()
+_G.HeadSize = 4 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 0.4 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)
+ end,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "FADED MENU [88K]",
+   Callback = function()
+_G.Toggles = "Y" -- You can put any keybind
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
+   end,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "BRING PARTS [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
+   end,
+})
+
+
+
+
+local Button = MAINTab:CreateButton({
+   Name = "TOUCH FLING [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Touch-Fling-46156"))()
+   end,
+})
+
+
+local Button = MAINTab:CreateButton({
+   Name = "HITBOX EXPANDER [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ezsee/Hitbox-Expander123/refs/heads/main/waaaaaat"))()
+   end,
+})
+
+
+local Button = MAINTab:CreateButton({
+   Name = "FLING ALL [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+   end,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "WICKED [88K]",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
+   end,
+})
+
+local SPAWNGUNTab = Window:CreateTab("SPAWN GUN", 4483362458) -- Title, Image
+local Section = SPAWNGUNTab:CreateSection("BUY GUN")
+
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY HK416 [88K]",
+    Callback = function()
+        local args = {
+    [1] = "HK416",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("HK416", -10000)
+   end,
+})
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY SP [88K]",
+    Callback = function()
+local args = {
+    [1] = "Silenced Pistol",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Silenced Pistol", -10000)
+   end,
+})
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY MEDKIT [88K]",
+    Callback = function()
+   local args = {
+    [1] = "MEDKIT",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("MEDKIT", -10000)
+   end,
+})
+
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY Desert Eagle [88K]",
+    Callback = function() game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Desert Deagle", -10000)
+    end,
+})
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY Glock-17 [88K]",
+    Callback = function()
+        local args = {
+    [1] = "Glock-17",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Glock-17", -10000)
+   end,
+ })
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY Glock-19 [88K]",
+    Callback = function()
+        local args = {
+    [1] = "Glock-19",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Glock-19", -10000)
+   end,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "ESP [88K]",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4iVTcMZK"))()
+   end,
+})
+
+-- FPS Booster Button (Rayfield example)
+
+local Button = MAINTab:CreateButton({
+   Name = "BOOST FPS [88K]",
+   Callback = function()
+       _G.Ignore = {}
+_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true,
+        ["Ignore Others"] = true,
+        ["Ignore Tools"] = true
+    },
+    Meshes = {
+        NoMesh = false,
+        NoTexture = false,
+        Destroy = false
+    },
+    Images = {
+        Invisible = true,
+        Destroy = false
+    },
+    Explosions = {
+        Smaller = true,
+        Invisible = false, -- Not for PVP games
+        Destroy = false -- Not for PVP games
+    },
+    Particles = {
+        Invisible = true,
+        Destroy = false
+    },
+    TextLabels = {
+        LowerQuality = true,
+        Invisible = false,
+        Destroy = false
+    },
+    MeshParts = {
+        LowerQuality = true,
+        Invisible = false,
+        NoTexture = false,
+        NoMesh = false,
+        Destroy = false
+    },
+    Other = {
+        ["FPS Cap"] = 240, -- true to uncap
+        ["No Camera Effects"] = true,
+        ["No Clothes"] = true,
+        ["Low Water Graphics"] = true,
+        ["No Shadows"] = true,
+        ["Low Rendering"] = true,    
+        ["Low Quality Parts"] = true,
+        ["Low Quality Models"] = true,
+        ["Reset Materials"] = true,
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+   end
+})
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY PISTOL [88K]",
+    Callback = function()
+        game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Pistol", -10000)
+    end,
+})
+
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY BANDAGES [88K]",
+    Callback = function()
+        local args = {
+    [1] = "BANDAGES",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("BANDAGES", -10000)
+   end,
+})
+
+local Button = MAINTab:CreateButton({
+   Name = "DEX [88K]",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstring/refs/heads/main/DexXenoAndRezware'))()
+   end
+})
+
+-- Rayfield button
+SPAWNGUNTab:CreateButton({
+    Name = "ALL CITY UZI [88K]",
+    Callback = function()
+        local args = {
+    [1] = "UZI",
+    [2] = -1000000
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("UZI", -10000)
+   end,
+})
+
+
+--// LOOP BRING ALL Menu (with ON/OFF + Reset Position)
+-- LocalScript
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+-- Vars
+local bringAllEnabled = false
+local bringPos = LocalPlayer.Character and (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - Vector3.new(5,0,0))
+
+-- GUI
+local gui = Instance.new("ScreenGui")
+gui.Name = "LoopBringAllGui"
+gui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+gui.Enabled = false
+
+local frame = Instance.new("Frame", gui)
+frame.Size = UDim2.new(0,300,0,160)
+frame.Position = UDim2.new(0.5,-150,0.4,-80)
+frame.BackgroundColor3 = Color3.fromRGB(20,20,20)
+frame.Active = true
+frame.Draggable = true
+Instance.new("UICorner", frame).CornerRadius = UDim.new(0,12)
+
+local title = Instance.new("TextLabel", frame)
+title.Size = UDim2.new(1,0,0,40)
+title.BackgroundTransparency = 1
+title.Text = "88K$HITZ LOOPBRING ALL"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
+title.TextColor3 = Color3.fromRGB(255,255,255)
+
+-- Toggle Button
+local toggleBtn = Instance.new("TextButton", frame)
+toggleBtn.Size = UDim2.new(0.9,0,0,40)
+toggleBtn.Position = UDim2.new(0.05,0,0,60)
+toggleBtn.BackgroundColor3 = Color3.fromRGB(60,0,0)
+toggleBtn.Text = "OFF"
+toggleBtn.Font = Enum.Font.GothamBold
+toggleBtn.TextColor3 = Color3.fromRGB(255,255,255)
+toggleBtn.TextScaled = true
+Instance.new("UICorner",toggleBtn).CornerRadius = UDim.new(0,8)
+
+-- Reset Button
+local resetBtn = Instance.new("TextButton", frame)
+resetBtn.Size = UDim2.new(0.9,0,0,40)
+resetBtn.Position = UDim2.new(0.05,0,0,110)
+resetBtn.BackgroundColor3 = Color3.fromRGB(40,40,40)
+resetBtn.Text = "RESET POSITION"
+resetBtn.Font = Enum.Font.GothamBold
+resetBtn.TextColor3 = Color3.fromRGB(255,255,255)
+resetBtn.TextScaled = true
+Instance.new("UICorner",resetBtn).CornerRadius = UDim.new(0,8)
+
+-- Functions
+local function setToggle(state)
+	bringAllEnabled = state
+	if bringAllEnabled then
+		toggleBtn.Text = "ON"
+		toggleBtn.BackgroundColor3 = Color3.fromRGB(0,150,0)
+	else
+		toggleBtn.Text = "OFF"
+		toggleBtn.BackgroundColor3 = Color3.fromRGB(60,0,0)
+	end
+end
+
+toggleBtn.MouseButton1Click:Connect(function()
+	setToggle(not bringAllEnabled)
+end)
+
+resetBtn.MouseButton1Click:Connect(function()
+	local hrp = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+	if hrp then
+		bringPos = hrp.Position - Vector3.new(5,0,0)
+	end
+end)
+
+-- Bring Loop
+RunService.RenderStepped:Connect(function()
+	if bringAllEnabled and bringPos then
+		for _,plr in ipairs(Players:GetPlayers()) do
+			if plr ~= LocalPlayer and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
+				-- Remove tools
+				plr.Backpack:ClearAllChildren()
+				for _,tool in ipairs(plr.Character:GetChildren()) do
+					if tool:IsA("Tool") then
+						tool:Destroy()
+					end
+				end
+				-- Teleport near localplayer
+				plr.Character.HumanoidRootPart.CFrame = CFrame.new(bringPos)
+			end
+		end
+	end
+end)
+
+-- Function para tawagin mula Rayfield button
+local function ShowLoopBringAll()
+	gui.Enabled = true
+end
+
+MAINTab:CreateButton({
+    Name = "LOOPBRING ALL [88K]",
+    Callback = function()
+        ShowLoopBringAll()
+   end,
+})
+
+local ACETab = Window:CreateTab("ACE EXECUTOR", 4483362458) -- Title, Image
+local Section = ACETab:CreateSection("EXECUTOR")
+
+local Button = ACETab:CreateButton({
+   Name = "ACE EXECUTOR [88K]",
+   Callback = function()
+   -- ACE EXECUTOR (Solora-Style Full) - LocalScript
+-- By Ace
+
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+
+-- Cleanup old GUI
+local oldGui = LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("AceExecutor")
+if oldGui then oldGui:Destroy() end
+
+-- ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.Name = "AceExecutor"
+gui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+gui.ResetOnSpawn = false
+
+-- Main Frame
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 500, 0, 350)
+mainFrame.Position = UDim2.new(0.2,0,0.2,0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(25,25,25)
+mainFrame.BorderSizePixel = 0
+mainFrame.Active = true
+mainFrame.Draggable = true
+mainFrame.Parent = gui
+
+-- Title Bar
+local titleBar = Instance.new("Frame", mainFrame)
+titleBar.Size = UDim2.new(1,0,0,28)
+titleBar.BackgroundColor3 = Color3.fromRGB(40,40,40)
+titleBar.BorderSizePixel = 0
+
+local title = Instance.new("TextLabel", titleBar)
+title.Size = UDim2.new(1,-60,1,0)
+title.Position = UDim2.new(0,5,0,0)
+title.Text = "ACE EXECUTOR"
+title.Font = Enum.Font.SourceSansBold
+title.TextSize = 16
+title.TextColor3 = Color3.fromRGB(0,255,127)
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.BackgroundTransparency = 1
+
+-- Close Button
+local closeBtn = Instance.new("TextButton", titleBar)
+closeBtn.Size = UDim2.new(0,28,1,0)
+closeBtn.Position = UDim2.new(1,-28,0,0)
+closeBtn.Text = "X"
+closeBtn.Font = Enum.Font.SourceSansBold
+closeBtn.TextSize = 14
+closeBtn.TextColor3 = Color3.fromRGB(255,100,100)
+closeBtn.BackgroundTransparency = 1
+closeBtn.MouseButton1Click:Connect(function()
+    gui:Destroy()
+end)
+
+-- Tabs Holder
+local tabHolder = Instance.new("Frame", mainFrame)
+tabHolder.Position = UDim2.new(0,0,0,28)
+tabHolder.Size = UDim2.new(1,0,0,28)
+tabHolder.BackgroundColor3 = Color3.fromRGB(30,30,30)
+tabHolder.BorderSizePixel = 0
+
+-- Tabs Storage
+local tabs = {}
+local currentTab = 0
+
+-- Left Panel
+local leftPanel = Instance.new("Frame", mainFrame)
+leftPanel.Position = UDim2.new(0,0,0,56)
+leftPanel.Size = UDim2.new(0,120,1,-56)
+leftPanel.BackgroundColor3 = Color3.fromRGB(35,35,35)
+leftPanel.BorderSizePixel = 0
+
+-- Editor Holder
+local editorHolder = Instance.new("Frame", mainFrame)
+editorHolder.Position = UDim2.new(0,120,0,56)
+editorHolder.Size = UDim2.new(1,-120,1,-56)
+editorHolder.BackgroundColor3 = Color3.fromRGB(20,20,20)
+editorHolder.BorderSizePixel = 0
+
+-- Syntax Highlighting Label
+local highlight = Instance.new("TextLabel", editorHolder)
+highlight.Size = UDim2.new(1,0,1,0)
+highlight.BackgroundTransparency = 1
+highlight.TextXAlignment = Enum.TextXAlignment.Left
+highlight.TextYAlignment = Enum.TextYAlignment.Top
+highlight.TextWrapped = false
+highlight.Font = Enum.Font.Code
+highlight.TextSize = 15
+highlight.RichText = true
+highlight.Text = ""
+
+-- Editor TextBox
+local editorBox = Instance.new("TextBox", editorHolder)
+editorBox.Size = UDim2.new(1,0,1,0)
+editorBox.BackgroundTransparency = 1
+editorBox.TextXAlignment = Enum.TextXAlignment.Left
+editorBox.TextYAlignment = Enum.TextYAlignment.Top
+editorBox.TextWrapped = false
+editorBox.ClearTextOnFocus = false
+editorBox.Font = Enum.Font.Code
+editorBox.TextSize = 15
+editorBox.MultiLine = true
+editorBox.TextColor3 = Color3.fromRGB(255,255,255)
+
+-- Syntax Highlight Function
+local keywords = {"local","function","end","if","then","else","elseif","for","while","do","return","game","workspace","Players"}
+local function updateHighlight()
+    local src = editorBox.Text
+    local colored = src
+    for _, kw in ipairs(keywords) do
+        colored = colored:gsub("%f[%w]"..kw.."%f[%W]", '<font color="rgb(85,170,255)">'..kw.."</font>")
+    end
+    colored = colored:gsub("\"(.-)\"", '<font color="rgb(255,170,0)">"%1"</font>')
+    colored = colored:gsub("%-%-.-\n", '<font color="rgb(0,200,0)">%1</font>\n')
+    colored = colored:gsub("(%d+)", '<font color="rgb(180,220,180)">%1</font>')
+    highlight.Text = colored
+    if tabs[currentTab] then
+        tabs[currentTab].text = editorBox.Text
+        tabs[currentTab].highlight = colored
+    end
+end
+
+editorBox:GetPropertyChangedSignal("Text"):Connect(updateHighlight)
+
+-- Left Panel Buttons Function
+local function createLeftButton(name, func, y)
+    local btn = Instance.new("TextButton", leftPanel)
+    btn.Size = UDim2.new(1,0,0,28)
+    btn.Position = UDim2.new(0,0,0,y)
+    btn.BackgroundColor3 = Color3.fromRGB(50,50,50)
+    btn.TextColor3 = Color3.fromRGB(255,255,255)
+    btn.Font = Enum.Font.SourceSansBold
+    btn.TextSize = 14
+    btn.Text = name
+    btn.MouseButton1Click:Connect(func)
+end
+
+-- Initialize Left Panel Buttons
+local yPos = 0
+
+-- Undo / Redo Stacks per tab
+local function initUndoRedo(t)
+    t.undoStack = {}
+    t.redoStack = {}
+end
+
+-- Execute
+createLeftButton("Execute", function()
+    local f, err = loadstring(editorBox.Text)
+    if f then pcall(f) else warn(err) end
+end, yPos)
+yPos = yPos + 30
+
+-- Select All
+createLeftButton("Select All", function()
+    editorBox:CaptureFocus()
+    editorBox.CursorPosition = 1
+    editorBox.SelectionStart = #editorBox.Text+1
+end, yPos)
+yPos = yPos + 30
+
+-- Copy
+createLeftButton("Copy", function()
+    setclipboard(editorBox.Text)
+end, yPos)
+yPos = yPos + 30
+
+-- Paste
+createLeftButton("Paste", function()
+    local success, clip = pcall(function() return getclipboard() end)
+    if success and clip then
+        local cursorPos = editorBox.CursorPosition or (#editorBox.Text + 1)
+        local before = editorBox.Text:sub(1, cursorPos-1)
+        local after = editorBox.Text:sub(cursorPos)
+        editorBox.Text = before .. clip .. after
+        editorBox.CursorPosition = cursorPos + #clip
+        updateHighlight()
+    end
+end, yPos)
+yPos = yPos + 30
+
+-- Clear
+createLeftButton("Clear", function()
+    editorBox.Text = ""
+end, yPos)
+yPos = yPos + 30
+
+-- Undo
+createLeftButton("Undo", function()
+    local t = tabs[currentTab]
+    if t and t.undoStack and #t.undoStack > 0 then
+        table.insert(t.redoStack, t.text)
+        local last = table.remove(t.undoStack)
+        editorBox.Text = last
+        updateHighlight()
+    end
+end, yPos)
+yPos = yPos + 30
+
+-- Redo
+createLeftButton("Redo", function()
+    local t = tabs[currentTab]
+    if t and t.redoStack and #t.redoStack > 0 then
+        table.insert(t.undoStack, t.text)
+        local last = table.remove(t.redoStack)
+        editorBox.Text = last
+        updateHighlight()
+    end
+end, yPos)
+yPos = yPos + 30
+
+-- Add Tab Button
+local addTabBtn = Instance.new("TextButton", tabHolder)
+addTabBtn.Size = UDim2.new(0,40,1,0)
+addTabBtn.Position = UDim2.new(0,5,0,0)
+addTabBtn.BackgroundColor3 = Color3.fromRGB(45,45,45)
+addTabBtn.Text = "+"
+addTabBtn.TextColor3 = Color3.fromRGB(255,255,255)
+addTabBtn.Font = Enum.Font.SourceSansBold
+addTabBtn.TextSize = 18
+
+-- Create Tab Function
+local function createTab(name)
+    local tabId = #tabs+1
+    tabs[tabId] = {text="-- New Tab\n", highlight="", undoStack={}, redoStack={}}
+
+    local btn = Instance.new("TextButton", tabHolder)
+    btn.Size = UDim2.new(0,80,1,0)
+    btn.Position = UDim2.new(0, 50 + (tabId-1)*85,0,0)
+    btn.BackgroundColor3 = Color3.fromRGB(40,40,40)
+    btn.TextColor3 = Color3.fromRGB(255,255,255)
+    btn.Font = Enum.Font.SourceSansBold
+    btn.TextSize = 14
+    btn.Text = name
+
+    local closeX = Instance.new("TextButton", btn)
+    closeX.Size = UDim2.new(0,16,1,0)
+    closeX.Position = UDim2.new(1,-16,0,0)
+    closeX.BackgroundTransparency = 1
+    closeX.Text = "✕"
+    closeX.TextColor3 = Color3.fromRGB(255,100,100)
+    closeX.Font = Enum.Font.SourceSansBold
+    closeX.TextSize = 14
+
+    closeX.MouseButton1Click:Connect(function()
+        if #tabs <=1 then return end
+        tabs[tabId] = nil
+        btn:Destroy()
+        if currentTab == tabId then
+            for k,v in pairs(tabs) do
+                switchTab(k)
+                break
+            end
+        end
+    end)
+
+    btn.MouseButton1Click:Connect(function()
+        switchTab(tabId)
+    end)
+
+    switchTab(tabId)
+end
+
+addTabBtn.MouseButton1Click:Connect(function()
+    createTab("Tab "..(#tabs+1))
+end)
+
+-- Switch Tab Function
+function switchTab(id)
+    if tabs[id] then
+        if currentTab ~= 0 then
+            tabs[currentTab].text = editorBox.Text
+            tabs[currentTab].highlight = highlight.Text
+        end
+        currentTab = id
+        editorBox.Text = tabs[id].text
+        highlight.Text = tabs[id].highlight
+        -- Highlight active tab visually
+        for i,v in pairs(tabHolder:GetChildren()) do
+            if v:IsA("TextButton") and v ~= addTabBtn then
+                v.BackgroundColor3 = (i==id) and Color3.fromRGB(70,70,70) or Color3.fromRGB(40,40,40)
+            end
+        end
+    end
+end
+
+-- Initialize first tab
+createTab("Tab 1")
+   end,
+})
